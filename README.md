@@ -1,1 +1,1 @@
-Apprentissage de la mise en forme d'un page HTML avec les flexbox
+Apprentissage de la mise en forme d'une page HTML avec les flexbox
