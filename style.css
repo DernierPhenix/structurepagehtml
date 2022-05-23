@@ -1,0 +1,142 @@
+/*
+    Display : flex | inline-flex
+    flex-direction : Gère l'orientation de l'élément (ligne ou colonne) sur l'axe principal (horizontal)
+    flex-direction : row | column | row-reverse | column-reverse
+    
+    flex-wrap : met les éléments flexibles sur une seule ou plusieurs lignes
+    flex-wrap : nowrap | wrap | wrap-reverse
+    
+    flex-flow ; combinaison de flex-direction & flex-wrap
+    flex-flow : <Valeur flex-direction> | <valeur de flex-wrap>
+    
+    justify-content joue sur l'axe principal (horizontal)
+    justify-content : flex-start | flex-end | center |space-between | space-around | space-evenly
+    
+    align-items : joue sur l'axe secondaire (vertical)
+    align-items : Stretch | flex-start | flex-end | center | Baseline (aligne le bloc de l'item sur le plus grand)
+    
+    order: Joue sur l'ordre de nos OBJETS - plus le nombre est petit plus l'objet sera devant
+    order : <int>
+    
+    flex-grow : définit le facteur d'expansion d'un élément fléxible selon sa dimension principale
+    flex-grow : <int>
+
+    flew-shrink : définit le facteur de rétrécissement d'un élément flexible par rapport à lataille du conteneur
+    flex-shrink : <int>
+*/
+body{
+    width: 800px;
+    border: 1px solid black
+}
+
+.hash{
+    border: 1px darkred dashed;
+    margin: 10px;
+    padding: 5px;
+}
+header{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+header h1{
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    margin: 10px;
+}
+
+nav{
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightgrey;
+    width: 75%;
+    height: 80px;
+    margin-bottom: 15px;
+
+}
+
+main{
+    display: flex;
+    height: 800px;
+    ;
+}
+
+div{
+    border: 1px solid rgb(0, 0, 0);
+    width: 400px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    flex-flow: column ;
+    width: 540px;
+}
+
+section{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+section h1{
+    text-align: center;
+}
+
+.art{
+    border: 1px solid black;
+    background-color: lightgray;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+
+}
+aside{
+    width: 300px;
+    height: 600px;
+}
+
+.haut{
+    border: 1px solid black;
+    background-color: lightgray;
+    margin: 15px;
+    width: auto;
+    height: 200px;
+}
+
+.milieu{
+    border: 1px solid black;
+    background-color: lightgray;
+    margin: 15px;
+    width: auto;
+    height: 100px;
+}
+.bas{
+    border: 1px solid black;
+    background-color: lightgray;
+    margin: 15px;
+    width: auto;
+    height: 150px;
+}
+.solid h1{
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+footer{
+    display: flex;
+    flex-flow: column;
+    padding: 15px;
+
+}
+.lien{
+    border: 1px solid black;
+    background-color: lightgray;
+    width: 55%;
+    text-align: center;
+    justify-items: center;
+
+}
